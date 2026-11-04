@@ -4,21 +4,21 @@
 
 ## 安装
 
-1. 在 [Releases](https://github.com/yixiaa/mihomo-merlin/releases/latest) 下载 `mihomo.tar.gz`。
+1. 下载最新安装包：[mihomo.tar.gz](https://raw.githubusercontent.com/yixiaa/mihomo-merlin/release/mihomo.tar.gz)（`release` 分支）。
 2. 路由器后台 → 软件中心 → 离线安装，选择该文件。
 3. 打开插件页，在「订阅」页添加机场订阅，回到「基本设置」打开开关，点「保存并应用」。
 
 ## 自动更新
 
-插件「更新」页的发布地址填：
+从 v1.7.3 起，插件安装时自动把发布地址设为：
 
 ```
-https://github.com/yixiaa/mihomo-merlin/releases/latest/download
+https://raw.githubusercontent.com/yixiaa/mihomo-merlin/release
 ```
 
-打开「自动更新插件」并保存后，路由器每 5 分钟检查一次 `version` 文件，发现新版本自动下载 `mihomo.tar.gz` 安装，设置保留；安装时 Mihomo 重启，断网约 10 秒。
+「自动更新插件」默认开启，路由器每 5 分钟检查一次 `version` 文件，发现新版本自动下载 `mihomo.tar.gz` 安装，设置保留；安装时 Mihomo 重启，断网约 10 秒。GitHub 直连打不开时自动走 gh-proxy 加速或 Mihomo 代理。
 
-每个 Release 都包含两个附件：
+`release` 分支根目录始终放最新版本的两个文件：
 
 | 文件 | 内容 |
 |---|---|
